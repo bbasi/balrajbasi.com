@@ -1,5 +1,5 @@
 # balrajbasi.com
 
-[assets - img](http://www.balrajbasi.com/img/)\
+[assets - games](http://agamedesigner.com/games)\
 [assets - gm](http://www.balrajbasi.com/gm)\
-[assets - gms](http://agamedesigner.com/games)
+[assets - img](http://www.balrajbasi.com/img/)
