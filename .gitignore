@@ -1,0 +1,7 @@
+.DS_Store
+/games/*
+/gm/*
+/img/*
+!games/.gitkeep
+!gm/.gitkeep
+!img/.gitkeep

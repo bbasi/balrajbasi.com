@@ -1,0 +1,323 @@
+@font-face{
+  font-family : "Roboto";
+  src         : url(/Roboto-Light.ttf) format("truetype");
+}
+body{
+  background-image : url("/img/background.png");
+  background-size  : 200px 200px;
+  font-family      : "Roboto", sans-serif;
+}
+#cntnr-main{
+  margin : 2em auto 0;
+  width  : 286px;
+}
+#cntnr-game{
+  margin  : 2em auto 0;
+  width   : 286px;
+  display : none;
+  opacity : 0;
+}
+.sqr{
+  width   : 140px;
+  height  : 140px;
+  display : inline-block;
+  margin  : -0.015em;
+  opacity : 0;
+}
+.sqr img{
+  width : 100%;
+}
+#sqr-nul{
+  display : none;
+}
+/* https://fvsch.com/styling-buttons/#reset */
+button{
+  padding : 0;
+  border  : none;
+  font    : inherit;
+  color   : inherit;
+  cursor  : pointer;
+  background-color: white;
+}
+.btn-bb {
+  display          : block;
+  text-align       : center;
+  text-decoration  : none;
+  border-radius    : 2px;
+  color            : black;
+  min-width        : 130px;
+  padding          : 0.6em 1em; /* size from padding */
+  margin           : 0.2em 0;
+  border           : solid 1px black;
+  background-color : white;
+}
+#game-btn-back{
+  background-color: transparent;
+  margin-bottom   : 1.70em;
+}
+#game-btn-play{
+  margin-top : 0.3em;
+  color      : #F012BE;
+}
+#game-lft{
+  width   : 142px;
+  height  : 142px;
+  display : inline-block;
+}
+#game-rht{
+  width  : 142px;
+  height : 142px;
+  float  : right;
+}
+#game-img-prnt{
+  width  : 100%;
+  height : 100%;
+}
+#game-img{
+  width         : 100%;
+  margin-bottom : 0.5em;
+}
+#game-ttl{
+  margin-left : 0.3em;
+  font-size   : 1.8em;
+}
+#game-sum{
+  font-size   : 1em;
+  margin-left : 0.6em;
+  color       : rgba(0, 0, 0, 0.80);
+}
+#game-vid-prnt{
+  width      : 250px;
+  height     : 250px;
+  margin-top : 1.5em;
+  display    : block;
+}
+#game-vid{
+  width  : 100%;
+  height : 100%;
+}
+#game-vid-basic{
+  width  : 100%;
+  height : 100%;
+}
+
+@media (min-width: 600px) {
+  #cntnr-main{
+    margin-top : 2.5em;
+    width      : 580px;
+  }
+  #cntnr-game{
+    width : 580px;
+  }
+  .sqr{
+    width  : 190px;
+    height : 190px;
+  } 
+  #game-bck{
+    display       : block;
+    margin-bottom : 1em;
+  }
+  #game-lft{
+    width   : 200px;
+    height  : 200px;
+    display : inline-block;
+  }
+  #game-rht{
+    width  : 380px;
+    height : 200px;
+  }
+  #game-ttl{
+    margin-left : 0.3em;
+    font-size   : 2.5em;
+  }
+  #game-sum{
+    font-size   : 1.3em;
+    margin-left : 0.7em;
+  }
+  #game-dsc{
+    font-size : 1.2em;
+  }
+  #game-vid-prnt{
+    width   : 300px;
+    height  : 300px;
+    display : block;
+  }
+  .btn-bb {
+    min-width : 160px;
+  }
+  #sqr-nul{
+    display : inline-block;
+  }
+}
+
+
+@media (min-width: 1200px) and (min-height: 900px) {
+  #cntnr-main{
+    width      : 758px;
+    margin-top : 3.14em;
+  }
+  #cntnr-game{
+    width: 758px;
+  }
+  .sqr{
+    width  : 250px;
+    height : 250px;
+  } 
+  #game-bck{
+    display       : block;
+    margin-bottom : 1em;
+  }
+  #game-lft{
+    width   : 240px;
+    height  : 240px;
+    display : inline-block;
+  }
+  #game-rht{
+    width  : 518px;
+    height : 240px;
+  }
+  #game-ttl{
+    margin-left : 0.3em;
+    font-size   : 2.8em;
+  }
+  #game-sum{
+    font-size   : 1.5em;
+    margin-left : 0.7em;
+  }
+  #game-vid-prnt{
+    width   : 400px;
+    height  : 400px;
+    display : block;
+  }
+  .btn-bb{
+    padding   : 0.7em 2em;
+    font-size : 1.35em;
+    min-width : 220px;
+  }
+}
+
+
+@media (min-width: 3000px) and (min-height: 1800px) {
+  #cntnr-main{
+    width      : 1508px;
+    margin-top : 3.14em;
+  }
+  #cntnr-game{
+    width : 1508px;
+  }
+  .sqr{
+    width  : 500px;
+    height : 500px;
+  } 
+  #game-bck{
+    display       : block;
+    margin-bottom : 1em;
+  }
+  #game-lft{
+    width   : 500px;
+    height  : 500px;
+    display : inline-block;
+  }
+  #game-rht{
+    width  : 1006px;
+    height : 240px;
+  }
+  #game-ttl{
+    margin-left : 0.3em;
+    font-size   : 6em;
+  }
+  #game-sum{
+    font-size   : 2.5em;
+    margin-left : 0.8em;
+  }
+  #game-vid-prnt{
+    width   : 700px;
+    height  : 700px;
+    display : block;
+  }
+  .btn-bb{
+    padding   : 0.8em 2em;
+    font-size : 2.2em;
+    min-width : 400px;
+  }
+}
+
+
+
+@-webkit-keyframes fade_in_ot_btn {
+  from { opacity:   1; }
+  35%  { opacity: 0.2; }
+  70%  { opacity: 0.2; }
+  to   { opacity:   1; }
+}
+@keyframes fade_in_ot_btn {
+  from { opacity:   1; }
+  35%  { opacity: 0.2; }
+  70%  { opacity: 0.2; }
+  to   { opacity:   1; }
+}
+.fade_in_ot_btn {
+  -webkit-animation-name     : fade_in_ot_btn;
+  animation-name             : fade_in_ot_btn;
+  -webkit-animation-duration : 700ms;
+  animation-duration         : 700ms;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.fadeIn {
+  -webkit-animation-name : fadeIn;
+  animation-name         : fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+.fadeOut {
+  -webkit-animation-name : fadeOut;
+  animation-name         : fadeOut;
+}
+
+.animated.dly-0    {-webkit-animation-delay   :    0ms; animation-delay   :    0ms;}
+.animated.dly-100  {-webkit-animation-delay   :  100ms; animation-delay   :  100ms;}
+.animated.dly-200  {-webkit-animation-delay   :  200ms; animation-delay   :  200ms;}
+.animated.dly-300  {-webkit-animation-delay   :  300ms; animation-delay   :  300ms;}
+.animated.dly-400  {-webkit-animation-delay   :  400ms; animation-delay   :  400ms;}
+.animated.dly-500  {-webkit-animation-delay   :  500ms; animation-delay   :  500ms;}
+.animated.dly-600  {-webkit-animation-delay   :  600ms; animation-delay   :  600ms;}
+.animated.dly-700  {-webkit-animation-delay   :  700ms; animation-delay   :  700ms;}
+.animated.dly-800  {-webkit-animation-delay   :  800ms; animation-delay   :  800ms;}
+.animated.dly-900  {-webkit-animation-delay   :  900ms; animation-delay   :  900ms;}
+.animated.dly-1000 {-webkit-animation-delay   : 1000ms; animation-delay   : 1000ms;}
+.animated.dly-1100 {-webkit-animation-delay   : 1100ms; animation-delay   : 1100ms;}
+.animated.dly-1200 {-webkit-animation-delay   : 1200ms; animation-delay   : 1200ms;}
+.animated.dly-1300 {-webkit-animation-delay   : 1300ms; animation-delay   : 1300ms;}
+.animated.dly-1400 {-webkit-animation-delay   : 1400ms; animation-delay   : 1400ms;}
+.animated.dly-1500 {-webkit-animation-delay   : 1500ms; animation-delay   : 1500ms;}
+.animated.dur-0    {-webkit-animation-duration:    0ms; animation-duration:    0ms;}
+.animated.dur-100  {-webkit-animation-duration:  100ms; animation-duration:  100ms;}
+.animated.dur-200  {-webkit-animation-duration:  200ms; animation-duration:  200ms;}
+.animated.dur-300  {-webkit-animation-duration:  300ms; animation-duration:  300ms;}
+.animated.dur-400  {-webkit-animation-duration:  400ms; animation-duration:  400ms;}
+.animated.dur-500  {-webkit-animation-duration:  500ms; animation-duration:  500ms;}
+.animated.dur-600  {-webkit-animation-duration:  600ms; animation-duration:  600ms;}
+.animated.dur-700  {-webkit-animation-duration:  700ms; animation-duration:  700ms;}
+.animated.dur-800  {-webkit-animation-duration:  800ms; animation-duration:  800ms;}
+.animated.dur-900  {-webkit-animation-duration:  900ms; animation-duration:  900ms;}
+.animated.dur-1000 {-webkit-animation-duration: 1000ms; animation-duration: 1000ms;}
+.animated.dur-1100 {-webkit-animation-duration: 1100ms; animation-duration: 1100ms;}
+.animated.dur-1200 {-webkit-animation-duration: 1200ms; animation-duration: 1200ms;}
+.animated.dur-1300 {-webkit-animation-duration: 1300ms; animation-duration: 1300ms;}
+.animated.dur-1400 {-webkit-animation-duration: 1400ms; animation-duration: 1400ms;}
+.animated.dur-1500 {-webkit-animation-duration: 1500ms; animation-duration: 1500ms;}
