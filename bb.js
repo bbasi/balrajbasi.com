@@ -82,7 +82,7 @@ function boot(){
 	sqr_hop.onclick = ()=> {if(inpt) to_game(games['hop'])};
 	sqr_ssm.onclick = ()=> {if(inpt) to_game(games['ssm'])};
 	let url_ghb = 'https://github.com/bbasi';
-	let url_cnt = 'mailto:contact@balrajbasi.com?subject=subject=Hi%20Balraj';
+	let url_cnt = 'mailto:contact@balrajbasi.com?subject=Hi%20Balraj';
 	sqr_ghb.onclick = ()=> {if(inpt) to_ext_url(sqr_ghb,url_ghb)};
 	sqr_cnt.onclick = ()=> {if(inpt) to_ext_url(sqr_cnt,url_cnt)};
 	elem_sqrs = [sqr_bal,sqr_ctn,sqr_bld,sqr_ssm,sqr_hop,sqr_ghb,sqr_cnt,sqr_cnd,sqr_bas];
