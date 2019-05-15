@@ -150,29 +150,29 @@ button{
   }
 }
 
-@media (min-width: 1200px) { /* //and (min-height: 900px) */
+@media (min-width: 1400px) { /* //and (min-height: 900px) */
   #cntnr-main{
-    width      : 548px;
+    width      : 608px;
     margin-top : 3.14em;
   }
   #cntnr-game{
-    width: 548px;
+    width: 608px;
   }
   .sqr{
-    width  : 180px;
-    height : 180px;
+    width  : 200px;
+    height : 200px;
   } 
   #game-bck{
     display       : block;
     margin-bottom : 1em;
   }
   #game-lft{
-    width   : 180px;
-    height  : 180px;
+    width   : 200px;
+    height  : 200px;
     display : inline-block;
   }
   #game-rht{
-    width  : 368px;
+    width  : 408px;
     height : 180px;
   }
   #game-ttl{
@@ -184,8 +184,8 @@ button{
     margin-left : 0.7em;
   }
   #game-vid-prnt{
-    width   : 250px;
-    height  : 250px;
+    width   : 300px;
+    height  : 300px;
     display : block;
   }
   .btn-bb{
