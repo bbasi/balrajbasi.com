@@ -153,28 +153,29 @@ button{
 
 @media (min-width: 1200px) and (min-height: 900px) {
   #cntnr-main{
-    width      : 684px;
+    width      : 608px;
     margin-top : 3.14em;
   }
   #cntnr-game{
-    width: 684px;
+    width: 608px;
+    background-color: red;
   }
   .sqr{
-    width  : 225px;
-    height : 225px;
+    width  : 200px;
+    height : 200px;
   } 
   #game-bck{
     display       : block;
     margin-bottom : 1em;
   }
   #game-lft{
-    width   : 225px;
-    height  : 225px;
+    width   : 200px;
+    height  : 200px;
     display : inline-block;
   }
   #game-rht{
-    width  : 459px;
-    height : 240px;
+    width  : 408px;
+    height : 200px;
   }
   #game-ttl{
     margin-left : 0.3em;
