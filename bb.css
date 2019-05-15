@@ -150,15 +150,14 @@ button{
   }
 }
 
-
-@media (min-width: 1200px) and (min-height: 900px) {
+/* //and (min-height: 900px) */
+@media (min-width: 1400px) {
   #cntnr-main{
     width      : 608px;
     margin-top : 3.14em;
   }
   #cntnr-game{
     width: 608px;
-    background-color: red;
   }
   .sqr{
     width  : 200px;
