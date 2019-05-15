@@ -347,6 +347,11 @@ function init_game_vid(prnt){
 		let e = document.createElement('video');
 		let mp4  = !!(e.canPlayType && e.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"').replace(/no/,''));
 		let webm = !!(e.canPlayType && e.canPlayType('video/webm; codecs="vp8, vorbis"')          .replace(/no/,''));
+
+		let usr_agnt = navigator.userAgent || navigator.vendor || window.opera;
+		if(/iPad|iPhone|iPod/.test(usr_agnt) && !window.MSStream)
+		 return '.jpg';
+
 		if(mp4)  return 'mp4';
 		if(webm) return 'webm';
 		return 'jpg';
