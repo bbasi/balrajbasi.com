@@ -27,7 +27,7 @@ body{
 .sqr img{
   width : 100%;
 }
-#sqr-nul{
+#sqr-cnd{
   display : none;
 }
 /* https://fvsch.com/styling-buttons/#reset */
@@ -145,7 +145,7 @@ button{
   .btn-bb {
     min-width : 160px;
   }
-  #sqr-nul{
+  #sqr-cnd{
     display : inline-block;
   }
 }
@@ -155,7 +155,6 @@ button{
   #cntnr-main{
     width      : 684px;
     margin-top : 3.14em;
-    background-color: red;
   }
   #cntnr-game{
     width: 684px;
