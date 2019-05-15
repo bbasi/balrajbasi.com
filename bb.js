@@ -489,7 +489,7 @@ class Game_Vid_Basic extends Game_Vid {
 		super.strt();
 		this.tmr = setInterval(()=>{
 			this.cb_fin();
-		}, 7000);	
+		}, 4500);	
 	}
 	stop(){
 		super.stop();
