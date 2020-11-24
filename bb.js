@@ -16,7 +16,7 @@ let games = {
 		id  : 'hop',
 		ttl : 'Hop Shot',
 		sum : 'pixel liftoff',
-		ios : 'https://itunes.apple.com/ca/app/hop-shot/id1073166647?mt=8'
+		ios : './games/hop_shot.apk'
 	},
 	'ssm' : {
 		id  : 'ssm',
