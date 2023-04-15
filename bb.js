@@ -106,7 +106,7 @@ function boot(){
 	    hd = (screen.height >= 1024 && screen.width >= 768);
 	gm_vid = init_game_vid(elem_game_vid_prnt);
 	
-	let dly_ini = 1500;
+	let dly_ini = 0;
 	let tme_str = Date.now();
 
 	prld_imgs( gt_imgs_sqrs(), ()=>{
@@ -207,9 +207,9 @@ function fade_in_main(frst=false){
 	let sqrs = [...elem_sqrs];
 	if(frst){
 		let bb = [sqrs.shift(),sqrs.pop()];
-		dlyd(1800, ()=>{
-			fade_in(bb[0], 400,    0);
-			fade_in(bb[1], 400, 1000);
+		dlyd(1200, ()=>{
+			fade_in(bb[0], 400,   0);
+			fade_in(bb[1], 400, 600);
 		});
 	}
 	sqrs = shuffle(sqrs.slice()); 
@@ -220,7 +220,7 @@ function fade_in_main(frst=false){
 		let dly = (max - dur) + 200;
 		fade_in(sqrs[i], dur, dly);
 	}
-	dlyd(frst ? (3500) : max + 300, ()=>{inpt=true});
+	dlyd(frst ? (2200) : max + 300, ()=>{inpt=true});
 }
 
 function fade_ot_main(id, cb){
@@ -257,13 +257,13 @@ function fade_in_game(gm,frst,cb){
 	fade_in(elem_game_img     , dur, 100);
 	fade_in(elem_game_ttl     , dur, 100);
 	fade_in(elem_game_sum     , dur, 100);
-	fade_in(elem_game_btn_back, dur, 700);
-	gm_vid.fd_in(dur,1000);
+	fade_in(elem_game_btn_back, dur, 500);
+	gm_vid.fd_in(dur,800);
 	if(gm.ios || gm.web || gm.and)  fade_in(elem_game_btn_play, dur, 500);
-	if(gm.ghb)            fade_in(elem_game_btn_ghub, dur, 700);
+	if(gm.ghb)                      fade_in(elem_game_btn_ghub, dur, 700);
 
-	dlyd(1200            , ()=>{ gm_vid.strt() });
-	dlyd(1200 + dur + 250, ()=>{          cb() });
+	dlyd(100            , ()=>{ gm_vid.strt() });
+	dlyd(800 + dur + 100, ()=>{          cb() });
 }
 
 function fade_ot_game(cb){
@@ -278,7 +278,7 @@ function fade_ot_game(cb){
 	if(elem_game_btn_play.style.opacity != 0) fade_ot(elem_game_btn_play, dur,  300);
 	if(elem_game_btn_ghub.style.opacity != 0) fade_ot(elem_game_btn_ghub, dur,  300);
 	
-	dlyd(500 + dur + 250, ()=>{
+	dlyd(500 + dur + 100, ()=>{
 		elem_game_btn_play.onclick = null;
 		elem_game_btn_ghub.onclick = null;
 		cb();
