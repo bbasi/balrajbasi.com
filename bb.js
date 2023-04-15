@@ -16,14 +16,20 @@ let games = {
 		id  : 'hop',
 		ttl : 'Hop Shot',
 		sum : 'pixel liftoff',
-		ios : './games/hop_shot.apk'
+		ios : './games/hop_shot.apk',
 	},
 	'ssm' : {
 		id  : 'ssm',
-		ttl : 'Sorcerers Summit',
+		ttl : 'Sorcerers Summit (Web)',
 		sum : 'we fly high, no lie',
 		web : './games/sorcerers_summit',
 		ghb : 'https://github.com/bbasi/sorcerers-summit',
+	},
+	'sss' : {
+		id  : 'sss',
+		ttl : 'Sorcerers Summit (Steam)',
+		sum : '"Beat my score, I dare you!" -nana',
+		web : 'https://store.steampowered.com/app/2255630/Sorcerers_Summit/',
 	}
 }
 let imgs_main = [
@@ -34,7 +40,7 @@ let imgs_main = [
 	'/gm/hop/icon.jpg',
 	 '/img/github.jpg',
 	'/img/contact.jpg',
-	    '/img/cnd.jpg',
+	'/gm/sss/icon.jpg',
 	   '/img/basi.jpg'
 ];
 
@@ -75,17 +81,18 @@ function boot(){
 	let sqr_hop      = gt_elem('sqr-hop');
 	let sqr_ghb      = gt_elem('sqr-ghb');
 	let sqr_cnt      = gt_elem('sqr-cnt');
-	let sqr_cnd      = gt_elem('sqr-cnd');
+	let sqr_sss      = gt_elem('sqr-sss');
 	let sqr_bas      = gt_elem('sqr-bas');
   sqr_ctn.onclick = ()=> {if(inpt) to_game(games['ctn'])};
 	sqr_bld.onclick = ()=> {if(inpt) to_game(games['bld'])};
 	sqr_hop.onclick = ()=> {if(inpt) to_game(games['hop'])};
 	sqr_ssm.onclick = ()=> {if(inpt) to_game(games['ssm'])};
+	sqr_sss.onclick = ()=> {if(inpt) to_game(games['sss'])};
 	let url_ghb = 'https://github.com/bbasi';
 	let url_cnt = 'mailto:contact@balrajbasi.com?subject=Hi%20Balraj';
 	sqr_ghb.onclick = ()=> {if(inpt) to_ext_url(sqr_ghb,url_ghb)};
 	sqr_cnt.onclick = ()=> {if(inpt) to_ext_url(sqr_cnt,url_cnt)};
-	elem_sqrs = [sqr_bal,sqr_ctn,sqr_bld,sqr_ssm,sqr_hop,sqr_ghb,sqr_cnt,sqr_cnd,sqr_bas];
+	elem_sqrs = [sqr_bal,sqr_ctn,sqr_bld,sqr_ssm,sqr_hop,sqr_ghb,sqr_cnt,sqr_sss,sqr_bas];
 
 	elem_game_btn_back = gt_elem('game-btn-back'); elem_game_btn_back.style.opacity = 0;
 	elem_game_btn_play = gt_elem('game-btn-play'); elem_game_btn_play.style.opacity = 0;
@@ -115,7 +122,7 @@ function boot(){
 		crt_sqr_img(sqr_hop, gt_img_sqr('hop',true));
 		crt_sqr_img(sqr_ghb, gt_img_sqr('ghb'));
 		crt_sqr_img(sqr_cnt, gt_img_sqr('cnt'));
-		crt_sqr_img(sqr_cnd, gt_img_sqr('cnd'));
+		crt_sqr_img(sqr_sss, gt_img_sqr('sss',true));
 		crt_sqr_img(sqr_bas, gt_img_sqr('bas'));
 
 		let dur = Date.now() - tme_str;
@@ -156,7 +163,7 @@ function gt_imgs_sqrs(){
 		gt_img_sqr('hop',true),
 		gt_img_sqr('ghb'),
 		gt_img_sqr('cnt'),
-		gt_img_sqr('cnd'),
+		gt_img_sqr('sss',true),
 		gt_img_sqr('bas'),
 	];
 }
